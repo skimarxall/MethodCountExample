@@ -5,18 +5,13 @@
     public *;
 }
 
--keep public class com.google.common.collect.Sets
--keepclassmembers class com.google.common.collect.Sets** {
+-keep public final class com.google.common.collect.Lists
+-keepclassmembers class com.google.common.collect.Lists** {
  *;
  }
 
- -keep public class com.google.common.collect.Collections2
- -keepclassmembers class com.google.common.collect.Collections2** {
-  *;
-  }
-
--keep public final class com.google.common.collect.Lists
--keepclassmembers class com.google.common.collect.Lists** {
+-keep public class com.google.common.collect.Sets
+-keepclassmembers class com.google.common.collect.Sets** {
  *;
  }
 
@@ -29,25 +24,11 @@
     public *;
 }
 
--keep public class com.google.common.io.CharStreams {
+-keep public class com.google.common.collect.ImmutableSet.** {
     public *;
 }
 
--keep public class com.google.common.collect.HashMultiset
--keepclassmembers class com.google.common.collect.HashMultiset** {
- *;
- }
-
--keep public class com.google.common.collect.HashBiMap
--keepclassmembers class com.google.common.collect.HashBiMap** {
- *;
- }
-
--keep public class javax.annotation.Nullable.** {
-     public *;
- }
-
--keep public class com.google.common.util.** {
+-keep public class com.google.common.util.concurrent.** {
     public *;
 }
 
