@@ -1,25 +1,8 @@
 -dontoptimize
 -dontobfuscate
 
--keep public class com.google.common.base.** { public *; }
-
--keep public final class com.google.common.collect.Lists
--keepclassmembers class com.google.common.collect.Lists** { *; }
-
--keep public class com.google.common.collect.Sets
--keepclassmembers class com.google.common.collect.Sets** { *; }
-
--keep public final class com.google.common.collect.Iterables
--keepclassmembers class com.google.common.collect.Iterables** { *; }
-
--keep public class com.google.common.collect.ImmutableList.** { public *; }
-
--keep public class com.google.common.collect.ImmutableSet.** { public *; }
-
 -keep public interface com.google.common.util.concurrent.** { public *; }
 -keep public class com.google.common.util.concurrent.** { public *; }
-
--keep public class com.google.common.primitives.** { public *; }
 
 -dontwarn com.google.j2objc.**
 -dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
